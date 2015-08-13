@@ -1,8 +1,21 @@
-Take me to [pookie](#pookie)
-### <a name="pookie"></a>Some heading
-
-
 # processhub-bpmn-manipulation
+
+## Table of contents
+- [Introduction](#introduction)
+    - [Composition Operators](#composition-operators)
+		- [1. Serial Composition](#1-serial-composition)
+		- [2. Parallel Composition](#2-parallel-composition)
+	- [Tailoring Operators](#tailoring-operators)
+		- [1. Rename](#1-rename)
+		- [2. Delete](#2-delete)
+		- [3. Replace](#3-replace)
+		- [4. Move](#4-move)
+		- [5. Parallelize](#5-parallelize)
+		- [6. Split](#6-split)
+		- [7. Insert](#7-insert)
+		- [8. Conditional Insert](#8-conditional-insert)
+		
+
 ## Introduction
 Processhub API to manipulate BPMN process. This API provides custom operators for tailoring and process composition by extending the camunda-bpmn-model functions to offer the required operators.
 
@@ -213,4 +226,3 @@ void conditionalInsert(afterOf, beforeOf, flowNodeToInsert, condition, inLoop);
 // Insert a set of nodes (fragmentToInsert can be a BpmnModelInstance or a Process)
 void conditionalInsert(afterOf, beforeOf, flowNodeToInsert, condition, inLoop);
 ```
-
